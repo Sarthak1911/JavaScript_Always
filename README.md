@@ -124,3 +124,26 @@ console.log(square(2));
 console.log(square(4));
 
 ```
+
+Equality Operators
+
+1. Strict Equality operator checks for both type and value of the operands.
+
+```
+let x = 1;
+let y = 2;
+
+console.log(x === y);//false
+console.log(x !== y);//true
+```
+
+2. Lose equality operator checks only for the value, and will convert the operand on the right to match the type on the left.
+
+```
+let x = 1;
+let y = "1";
+
+console.log(x == y);//true
+```
+
+3. It's recommended to use Strict Operator.
