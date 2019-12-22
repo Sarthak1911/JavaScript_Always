@@ -200,3 +200,40 @@ With AND though it will evaluate till the last truthy value
 //With AND
 console.log(true && 1 && 2);//2
 ```
+
+For-In loop in JavaScript
+
+In order to iterate over properties of an object, it is recommended to use for in loop.
+
+```
+let person = {
+  firstName: "Jon",
+  lastName: "Doe"
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+```
+
+It can also be used to iterate over anmv array.
+
+```
+let colors = ['red', 'green'];
+
+for (let index in colors){
+  console.log(colors[index]);
+}
+```
+
+For-Of loop in JavaScript
+
+It is same as of For-In syntax-wise, we replace in with of. It's the recommended way of iterating over array.
+
+```
+let colors = ["red", "blue"];
+
+for (let color of colors) console.log(color);
+```
+
+As compared to For-In loop, in this For-Of loop we don't have to access array elements using index. In this case the variable color holds the array element.
