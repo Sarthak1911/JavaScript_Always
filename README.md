@@ -147,3 +147,18 @@ console.log(x == y);//true
 ```
 
 3. It's recommended to use Strict Operator.
+
+Ternary Operators
+
+```
+/* Customers with points greater than 100 are gold else silver*/
+
+let points = 110;
+
+let type = points > 100 ? 'Gold' : 'Silver';
+
+console.log(type);
+```
+
+Read the above expression like this:
+Return Gold if the expression is true, return 'Silver' if the expression is false.
