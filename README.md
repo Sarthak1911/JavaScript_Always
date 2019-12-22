@@ -62,8 +62,9 @@ let dotNotation = person.firstName;
   1. It's very concise.
   2. Makes the code look clean.
 
-  - Cons
-    1. Cannot be used to dynamically select object properties at run time. (refer Dynamic property assignment at runtime)
+- Cons
+
+  1. Cannot be used to dynamically select object properties at run time. (refer Dynamic property assignment at runtime)
 
 - Bracket Notation
 
@@ -73,8 +74,8 @@ let bracketNotation = person["firstName"];
 
 - Pros
   1. Can be used to dynamically assign properties at run time (refer Dynamic property assignment at runtime)
-  - Cons
-    1. Not very concise and clean.
+- Cons
+  1. Not very concise and clean.
 
 Dynamic property assignment at runtime
 
