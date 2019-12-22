@@ -104,12 +104,23 @@ let selectedColors = ["White", "Red"];
 
 Functions
 
+Functions in JavaScript either performs a task or calculates and returns a value.
+
 ```
+//Performing task i.e. displaying name
 function displayName(firstName, lastName) {
   console.log(`${firstName} ${lastName}`);
 }
 
 displayName("Jon", "Doe");//Jon Doe
 displayName("Rambo");//Rambo undefined
+
+//Calulating and returning value
+function square(number) {
+  return number * number;
+}
+
+console.log(square(2));
+console.log(square(4));
 
 ```
