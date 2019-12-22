@@ -20,6 +20,20 @@ JavaScript variables
 - use Camel notation
 - should be declared on seperate lines
 
+Variables and Constant types in JavaScript
+
+- In JS, varibales and constants are of two types i.e.
+  1.  Primitive Type / Value Types
+      - string
+      - boolean
+      - number
+      - undefined
+      - null
+  2.  Refrence Type
+      - object
+      - array
+      - function
+
 typeof
 
 - typeof undefined variable is undefined
