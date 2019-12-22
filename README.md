@@ -33,6 +33,7 @@ Variables and Constant types in JavaScript
       - object
       - array
       - function
+- By default value of variable in JavaScript is undefined.
 
 typeof
 
@@ -99,4 +100,16 @@ Declaring array in JavaScript
 
 ```
 let selectedColors = ["White", "Red"];
+```
+
+Functions
+
+```
+function displayName(firstName, lastName) {
+  console.log(`${firstName} ${lastName}`);
+}
+
+displayName("Jon", "Doe");//Jon Doe
+displayName("Rambo");//Rambo undefined
+
 ```
