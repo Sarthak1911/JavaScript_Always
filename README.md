@@ -38,3 +38,57 @@ typeof
 
 - typeof undefined variable is undefined
 - typeof null variable is an object
+
+Objects in JavaScript
+
+```
+let person = {
+  firstName: "Jon",
+  lastName: "Doe"
+};
+
+```
+
+Accessing object properties in Javascript
+
+- Dot Notation
+
+```
+let dotNotation = person.firstName;
+```
+
+- Pros
+
+  1. It's very concise.
+  2. Makes the code look clean.
+
+  - Cons
+    1. Cannot be used to dynamically select object properties at run time. (refer Dynamic property assignment at runtime)
+
+- Bracket Notation
+
+```
+let bracketNotation = person["firstName"];
+```
+
+- Pros
+  1. Can be used to dynamically assign properties at run time (refer Dynamic property assignment at runtime)
+  - Cons
+    1. Not very concise and clean.
+
+Dynamic property assignment at runtime
+
+```
+let person = {
+  firstName: "Jon",
+  lastName: "Doe"
+};
+
+let runtimeVariable = "firstName";
+
+let bracketNotation = person[runtimeVariable];//Jon
+
+runtimeVariable = "lastName";
+
+bracketNotation = person[runtimeVariable];//Doe
+```
