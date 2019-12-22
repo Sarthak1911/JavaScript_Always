@@ -46,7 +46,6 @@ let person = {
   firstName: "Jon",
   lastName: "Doe"
 };
-
 ```
 
 Accessing object properties in Javascript
@@ -59,12 +58,12 @@ let dotNotation = person.firstName;
 
 - Pros
 
-  1. It's very concise.
-  2. Makes the code look clean.
+1. It's very concise.
+2. Makes the code look clean.
 
 - Cons
 
-  1. Cannot be used to dynamically select object properties at run time. (refer Dynamic property assignment at runtime)
+1. Cannot be used to dynamically select object properties at run time. (refer Dynamic property assignment at runtime)
 
 - Bracket Notation
 
@@ -92,4 +91,12 @@ let bracketNotation = person[runtimeVariable];//Jon
 runtimeVariable = "lastName";
 
 bracketNotation = person[runtimeVariable];//Doe
+```
+
+Arrays
+
+Declaring array in JavaScript
+
+```
+let selectedColors = ["White", "Red"];
 ```
