@@ -18,3 +18,9 @@ JavaScript variables
 - cannot contain name or hyphen
 - are case sensitive
 - use Camel notation
+- should be declared on seperate lines
+
+typeof
+
+- typeof undefined variable is undefined
+- typeof null variable is an object
