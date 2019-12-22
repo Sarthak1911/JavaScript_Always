@@ -162,3 +162,41 @@ console.log(type);
 
 Read the above expression like this:
 Return Gold if the expression is true, return 'Silver' if the expression is false.
+
+Using logical operators with non-booleans
+
+In JavaScript values can be true | truthy | false | falsy
+
+Falsy values in JavaScript are
+
+- false
+- ""
+- undefined
+- null
+- NaN
+- 0
+
+All values which are not falsy are truthy
+
+```
+console.log(false || "red");//red
+console.log(false || 1);//1
+console.log(true || undefined);//true
+console.log(false || undefined);//undefined
+console.log(true && undefined);//undefined
+console.log(false && undefined);//false
+```
+
+Following is an example of short circuiting i.e. JavaScript engine will start comparision from left to right and once it encounters a truthy it will stop and display the truthy value.
+
+```
+// With OR
+console.log(false || 1 || 2);//1
+```
+
+With AND though it will evaluate till the last truthy value
+
+```
+//With AND
+console.log(true && 1 && 2);//2
+```
