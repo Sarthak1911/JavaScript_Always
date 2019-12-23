@@ -49,6 +49,37 @@ let person = {
 };
 ```
 
+Factory Function
+
+1. Use Camel notation to declare factory functions.
+2. In an object, if the key and value are the same, then in JavaScript we can use either one. Refer radius in the following example.
+3. No need to use 'function' key word to declare function in an object. Refer draw() in the following example.
+
+```
+//Factory function
+function createCircle(radius) {
+  return {
+    radius,
+    draw() {
+      console.log("Drawing radius");
+    }
+  };
+}
+```
+
+Constructor function
+
+```
+//Constructor function
+function Circle(radius) {
+  this.radius = radius;
+
+  this.draw = function() {
+    console.log("Deawing radius");
+  };
+}
+```
+
 Accessing object properties in Javascript
 
 - Dot Notation
@@ -236,4 +267,4 @@ let colors = ["red", "blue"];
 for (let color of colors) console.log(color);
 ```
 
-As compared to For-In loop, in this For-Of loop we don't have to access array elements using index. In this case the variable color holds the array element.
+As compared to For-In loop, in For-Of loop we don't have to access array elements using index. In this case the variable color holds the array element.
