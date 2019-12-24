@@ -294,6 +294,59 @@ let getMaxB = function() {
 };
 ```
 
+Arguments in JavaScript
+
+In JavaScript if one needs to pass more than one argumnets i.e. not a fixed number of arguments us the following.
+
+```
+function argument() {
+  console.log(arguments);
+}
+
+argument(1, 2, "sdasd", true, { id: "one" });
+```
+
+All arguments are stored in the arguments object. It is an iterable object so one can use iterable methods on it.
+
+rest operator
+
+Do not confuse with spread operator.
+
+```
+function argument(name, ...args) {
+  //   console.log(name, arguments);
+  console.log(args);
+}
+
+argument('Jon', 1, 2, "sdasd", true, { id: "one" });
+```
+
+Here args is an array of arguments.
+
+Default arguments
+
+```
+someFunction();//1
+someFunction(2);//2
+
+function someFunction(arg = 1){
+
+      console.log(arg);
+
+}
+```
+
+Optional arguments
+Try and place optional arguments at the end of the argument list.
+
+```
+function someFunction(arg?){
+
+      console.log(arg);
+
+}
+```
+
 Equality Operators
 
 1. Strict Equality operator checks for both type and value of the operands.
