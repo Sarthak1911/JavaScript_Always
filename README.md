@@ -65,6 +65,9 @@ function createCircle(radius) {
     }
   };
 }
+
+const circleFactory = createCircle(10);
+
 ```
 
 Constructor function
@@ -77,6 +80,9 @@ function Circle(radius) {
   this.draw = function() {
     console.log("Deawing radius");
   };
+
+const circleConstructor = new Circle(10);
+
 }
 ```
 
@@ -131,6 +137,28 @@ Declaring array in JavaScript
 
 ```
 let selectedColors = ["White", "Red"];
+```
+
+- Use .push() method to add elements at the end of an array.
+- Use .pop() method to remove elements from the end of an array.
+- Use .unshift() method to add elements at the start of an array.
+- Use .shift() method to remove elements from the begining of an array
+- Use .splice() method to add elements in the middle of an array.
+- Use .find() method to find object in an array.
+- Use .findIndex() method to get the first index of an object in an array.
+
+Emptying an array
+
+```
+//Reassign - doesn't work with const
+let array = [1, 2, 3];
+array = [];
+//Set length to 0
+let array = [1, 2, 3];
+array.length = 0;
+//Use splice
+let array = [1, 2, 3];
+array.splice(0, array.length);
 ```
 
 Functions
