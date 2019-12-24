@@ -252,8 +252,22 @@ function square(number) {
 
 console.log(square(2));
 console.log(square(4));
+```
+
+Function Declaration vs Function Expression
 
 ```
+//Function Declaration
+function getMax() {
+      ...
+}
+
+let getMax = function() {
+      ...
+};
+```
+
+Note that when using function declaration we don't add semicolon after the closing curly brace, where as for function expression we do, by convention.
 
 Equality Operators
 
