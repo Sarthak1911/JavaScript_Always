@@ -196,14 +196,40 @@ every() method checks if all the elements in the array satisfy given condition.
 
 ```
 let numbers = [1, 2, 3];
-let allPositive = numbers.every(value => return value > 0);//true
+let allPositive = numbers.every(value => value > 0);//true
 ```
 
 some() method checks if some elements in the array satisfy given condition.
 
 ```
 let numbers = [1, 2, -3];
-let someNegative = numbers.some(value => return value < 0);//true
+let someNegative = numbers.some(value => value < 0);//true
+```
+
+filter()
+Can be used to implement filter functionality.
+
+```
+let numbers = [1, 2, 3, -3];
+let allPositive = numbers.filter(value => value > 0);//[1, 2, 3]
+```
+
+map()
+Can be used to map elements in array.
+
+```
+let numbers = [1, 2, 3, 4];
+const items = numbers.map(number => ({ value: number }));
+const list = numbers.map(number => ('<li>' + number + '</li>'));
+```
+
+reduce()
+
+```
+let numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.reduce((accumulator, currentValue) => accumulator + currentValue));//15
+
 ```
 
 Functions
