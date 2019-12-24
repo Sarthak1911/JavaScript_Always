@@ -467,3 +467,45 @@ forEach loop is only used with arrays. If one needs to get an index of an array 
 let colors = ["red", "blue"];
 colors.forEach((color, index) => console.log(color, index););
 ```
+
+Error vs Exception
+
+Error is an object in JavaScript. The moment one throws an Error it becomes an exception.
+
+let vs var
+
+let creates block-scoped variables, where as let created function-scoped variables.
+
+Using let
+
+```
+function start(){
+      for(let i = 0; i < 6; i++){
+
+            console.log(i);
+
+      }//1, 2, 3, 4, 5
+
+      console.log(i);//Undefined Error
+
+}
+
+console.log(i);//Undefined Error
+
+```
+
+Using var
+
+```
+function start(){
+      for(let i = 0; i < 6; i++){
+
+            console.log(i);
+
+      }//1, 2, 3, 4, 5
+
+      console.log(i);//6
+
+}
+console.log(i);//Undefined Error
+```
