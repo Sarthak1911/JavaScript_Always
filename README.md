@@ -262,12 +262,37 @@ function getMax() {
       ...
 }
 
+//Anonymous Function Expression
 let getMax = function() {
       ...
 };
+
+//Named Function Expression
+let getMax = function max() {
+      ...
+};
+
 ```
 
 Note that when using function declaration we don't add semicolon after the closing curly brace, where as for function expression we do, by convention.
+
+Functions created using function declaration can be called before the declaration as the function declaration are hoisted by the JavaScript engine automatically.
+
+```
+getMaxA();//Max A
+
+//Function Declaration
+function getMaxA() {
+      console.log('Max A');
+}
+
+getMaxB();//RefrenceError
+
+//Anonymous Function Expression
+let getMaxB = function() {
+      console.log('Max A');
+};
+```
 
 Equality Operators
 
