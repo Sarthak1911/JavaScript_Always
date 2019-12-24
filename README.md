@@ -486,11 +486,11 @@ function start(){
 
       }//1, 2, 3, 4, 5
 
-      console.log(i);//Undefined Error
+      console.log(i);//Refrence Error
 
 }
 
-console.log(i);//Undefined Error
+console.log(i);//Refrence Error
 
 ```
 
@@ -507,5 +507,5 @@ function start(){
       console.log(i);//6
 
 }
-console.log(i);//Undefined Error
+console.log(i);//Refrence Error
 ```
