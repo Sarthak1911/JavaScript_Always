@@ -275,7 +275,7 @@ for (let key in person) {
 }
 ```
 
-It can also be used to iterate over anmv array.
+It can also be used to iterate over an array.
 
 ```
 let colors = ['red', 'green'];
@@ -296,3 +296,11 @@ for (let color of colors) console.log(color);
 ```
 
 As compared to For-In loop, in For-Of loop we don't have to access array elements using index. In this case the variable color holds the array element.
+
+forEach loop
+forEach loop is only used with arrays. If one needs to get an index of an array element, one should use forEach or for-In loop.
+
+```
+let colors = ["red", "blue"];
+colors.forEach((color, index) => console.log(color, index););
+```
