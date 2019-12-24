@@ -191,6 +191,21 @@ console.log(
 );
 ```
 
+every() and some() methods in JavaScript
+every() method checks if all the elements in the array satisfy given condition.
+
+```
+let numbers = [1, 2, 3];
+let allPositive = numbers.every(value => return value > 0);//true
+```
+
+some() method checks if some elements in the array satisfy given condition.
+
+```
+let numbers = [1, 2, -3];
+let someNegative = numbers.some(value => return value < 0);//true
+```
+
 Functions
 
 Functions in JavaScript either performs a task or calculates and returns a value.
