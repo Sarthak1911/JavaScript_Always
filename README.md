@@ -161,6 +161,36 @@ let array = [1, 2, 3];
 array.splice(0, array.length);
 ```
 
+Sorting an array
+
+```
+let numbers = [1, 2, 3];
+
+//Ascending
+console.log(numbers.sort());
+
+//Descending
+console.log(numbers.reverse());
+```
+
+Sorting based on object's property in an array
+
+```
+let objects = [
+  { id: 1, course: "Node" },
+  { id: 2, course: "JavaScript" }
+];
+
+//Sorting based on course property
+console.log(
+  objects.sort((object1, object2) => {
+    if (object1.course.toLowerCase() < object2.course.toLowerCase()) return -1;
+    if (object1.course.toLowerCase() > object2.course.toLowerCase()) return 1;
+    return 0;
+  })
+);
+```
+
 Functions
 
 Functions in JavaScript either performs a task or calculates and returns a value.
