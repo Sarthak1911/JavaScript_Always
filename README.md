@@ -474,7 +474,7 @@ Error is an object in JavaScript. The moment one throws an Error it becomes an e
 
 let vs var
 
-let creates block-scoped variables, where as let created function-scoped variables.
+let creates block-scoped variables, where as let created function-scoped variables. Also, var attaches the the variable to the window object i.e. Global Scope.
 
 Using let
 
