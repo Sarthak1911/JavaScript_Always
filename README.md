@@ -509,3 +509,28 @@ function start(){
 }
 console.log(i);//Refrence Error
 ```
+
+## JavaScript OOP
+
+Four pillars of OOP
+
+- Abstraction
+- Polymorphism
+- Encapsulation
+- Inheritance
+
+**Encapsulation**
+
+In OOP we group related variables and functions that operate on them together in a single units called objects. This is encapsulation.
+
+**Abstraction**
+
+In OOP we hide the details and the complexity and show only the essentials, this is Abstraction.
+
+**Inheritance**
+
+In OOP we can inherit properties and methods from other objects and build on them further, this is Inheritance.
+
+**Polymorphism**
+
+In OOP an object can take multiple forms. This is called Polymorphism.
